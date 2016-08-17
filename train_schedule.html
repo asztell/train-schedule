@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign-Up Today!</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- <script src="https://www.gstatic.com/firebasejs/live/3.2.1/firebase.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script type="text/javascript" src="firebase.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<br>
+	<div class="jumbotron">
+		<h1 class="text-center">Train Schedule</h1>
+		<!-- <h3 class="text-center">A Comprehensive Directory of Employee Bilable Hours</h3> -->
+	</div>
+
+	<div class="row">
+
+		<!-- Sign-Up Panel-->
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Train</h3>
+				</div>
+				<div class="panel-body">
+
+<!-- Sign-up Form (note the various input "types")-->
+					<form role="form">
+						<div class="form-group">
+							<label for="text">Service Number</label>
+							<input type="text" class="form-control" id="servicenumberinput">
+						</div>
+						<div class="form-group">
+							<label for="text">Arriving From</label>
+							<input type="text" class="form-control" id="arrivingfrominput">
+						</div>
+						<div class="form-group">
+							<label for="comment">First Train Time (hh:mm military time)</label>
+							<input type="text" class="form-control" id="firsttraintimeinput">
+						</div>
+						<div class="form-group">
+							<label for="text">Frequency (min)</label>
+							<input type="text" class="form-control" id="frequencyinput">
+						</div>
+							<button type="submit" class="btn btn-default" id="addtrain">Submit</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Schedule</h3>
+				</div>
+				<div class="panel-body">
+					<table class="table">
+						<thead>
+							<tr>
+                                <th>Service Number</th>
+								<th>Arriving From</th>
+								<th>Frequency (min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="moment.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
